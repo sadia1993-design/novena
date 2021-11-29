@@ -1,5 +1,3 @@
-
-
 <!-- Slider Start -->
 <section class="banner">
 	<div class="container">

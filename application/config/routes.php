@@ -51,6 +51,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Pages/home';
 $route['home'] = 'Pages/home';
+$route['about'] = 'Pages/about';
+$route['service'] = 'Pages/service';
+$route['department'] = 'Pages/department';
+$route['departmentSingle'] = 'Pages/departmentSingle';
+$route['contact'] = 'Pages/contact';
+$route['blogSingle'] = 'Pages/blogSingle';
+$route['blogSidebar'] = 'Pages/blogSidebar';
+$route['doctors'] = 'Pages/doctors';
+$route['doctorSingle'] = 'Pages/doctorSingle';
+$route['appointment'] = 'Pages/appointment';
 
 
 $route['404_override'] = 'Pages/error';

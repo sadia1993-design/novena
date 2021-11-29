@@ -9,7 +9,7 @@
     <title>Novena- Health & Care Medical template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets//images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -50,7 +50,7 @@
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="" class="img-fluid">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,34 +60,34 @@
                 <div class="collapse navbar-collapse" id="navbarmain">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="<?php echo base_url('home') ?>">Home</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('about') ?>">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('service') ?>">Services</a></li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                                <li><a class="dropdown-item" href="department.html">Departments</a></li>
-                                <li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('department') ?>">Departments</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('departmentSingle') ?>">Department Single</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
-                                <li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-                                <li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('doctors') ?>">Doctors</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('doctorSingle') ?>">Doctor Single</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('appointment') ?>">Appoinment</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('blogSidebar') ?>">Blog with Sidebar</a></li>
 
-                                <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('blogSingle') ?>">Blog Single</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
