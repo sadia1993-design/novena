@@ -20,9 +20,9 @@
         <div class="form-title text-center mb-5">
             <h1>Login Form</h1>
         </div>
-        <form method="post" action="" class="mb-5">
+        <form method="post" action="<?php echo base_url('Admin/login')?>" class="mb-5">
             <label for="user" class="fw-bold mb-3">Enter Email</label>
-            <input class="form-control random mb-4 btn-lg" type="email" name="user" id="user" placeholder="E-mail Address" required>
+            <input class="form-control random mb-4 btn-lg" type="email" name="email" id="user" placeholder="E-mail Address" required>
             <label for="password" class="fw-bold mb-3">Enter Password</label>
             <input class="form-control mb-4 btn-lg" type="password" id="password" name="passwd" placeholder="Password" required>
             <div class="form-button text-center">
