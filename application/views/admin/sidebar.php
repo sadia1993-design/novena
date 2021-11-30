@@ -5,7 +5,7 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url('Admin/dashboard')?>">
             <i class="fas fa-tachometer-alt"></i>
             <span class="menu-title ">Dashboard</span>
           </a>

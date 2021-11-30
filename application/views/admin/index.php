@@ -30,7 +30,26 @@
             </div>
         </form>
 
+        <?php 
+           $msg= $this->session->userdata('msg');
+           $mdgColor = $this->session->userdata('msgColor');
+           if($mdgColor== 'red_color'){
+            echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+  <strong>oops!</strong> $msg
+  <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+</div>";
+            $this->session->unset_userdata('msg');
+           }
+           elseif($mdgColor== 'green_color'){
+            echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+  <strong>Hei buddy!</strong> $msg
+  <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+</div>";
+            $this->session->unset_userdata('msg');
+           }
+        ?>
 
+    </div>
 
 
 
