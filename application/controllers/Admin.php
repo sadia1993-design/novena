@@ -89,4 +89,29 @@ class Admin extends CI_Controller {
             redirect('Admin');
         }
     }
+
+    //edit banner 
+    public function edit_banner($id)
+    {
+        $data['banner_edit'] = $this->Admin_model->get_banner_info($id);
+        if ($this->session->userdata('admin_id')) {
+            $this->load->view('admin/header');
+            $this->load->view('admin/sidebar');
+            $this->load->view('admin/banner/banner_edit',$data);
+            $this->load->view('admin/footer');
+        } 
+        else {
+            redirect('Admin');
+        }
+    }
+
+    //update banner
+    public function update_banner($id)
+    {
+        $data = $this->input->post();
+        $update_info = $this->Admin_model->update_banner_info($data, $id);
+        redirect('Admin/banner');
+    }
+   
+    
 }

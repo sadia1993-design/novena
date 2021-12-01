@@ -19,6 +19,7 @@ class Admin_model extends CI_Model
         return $result;
     }
 
+    //SHOW ALL BANNER
     public function banner_info()
     {
         $this->db->select('*')->from('banner');
@@ -26,6 +27,23 @@ class Admin_model extends CI_Model
         $result = $query_result->result();
         return $result;
     }
+
+    //BANNER EDIT QUERY
+    public function get_banner_info($id)
+    {
+        $this->db->select('*')->from('banner')->where('id', $id);
+        $query_result = $this->db->get();
+        return $result = $query_result->row();
+    }
+
+    //BANNER UPDATE QUERY
+    public function update_banner_info($data, $id)
+    {
+        $this->db->where('id', $id);
+        $this->db->update('banner', $data);
+        
+    }
+
 
  
 }

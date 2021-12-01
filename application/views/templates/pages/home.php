@@ -6,7 +6,7 @@ foreach ($banner_info as $key => $value) {
 }
 
 ?>
-<section class="banner" style="background-image: url('<?php echo base_url()?>');">
+<section class="banner" style="background-image: url('<?php echo base_url()?>/assets/images/bg/<?php echo $banner_obj->banner_img; ?>');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-xl-7">
