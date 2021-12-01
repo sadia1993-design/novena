@@ -90,7 +90,7 @@
                                 <li><a class="dropdown-item" href="<?php echo base_url('blogSingle') ?>">Blog Single</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('contact') ?>">Contact</a></li>
                     </ul>
                 </div>
             </div>
