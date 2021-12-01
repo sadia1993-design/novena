@@ -5,7 +5,7 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('dashboard')?>">
+          <a class="nav-link" href="<?php echo base_url('dashboard') ?>">
             <i class="fas fa-tachometer-alt"></i>
             <span class="menu-title ">Dashboard</span>
           </a>
@@ -20,8 +20,8 @@
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href=""> General </a></li>
-              <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('banner')?>"> Banner </a></li>
-              <li class="nav-item"> <a class="nav-link" href=""> Counter </a></li>
+              <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('banner') ?>"> Banner </a></li>
+              <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('counter') ?>"> Counter </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Service </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Appointment </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Review </a></li>

@@ -44,6 +44,13 @@ class Admin_model extends CI_Model
         
     }
 
+    //show all counter  
+    public function counter_info()
+    {
+        $this->db->select('*')->from('counter')->order_by('id', 'desc')->limit(4);
+        $query = $this->db->get();
+        return $result = $query->result();
+    }
 
  
 }

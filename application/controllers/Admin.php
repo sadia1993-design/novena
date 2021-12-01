@@ -112,6 +112,22 @@ class Admin extends CI_Controller {
         $update_info = $this->Admin_model->update_banner_info($data, $id);
         redirect('Admin/banner');
     }
+
+    //show counter
+    public function counter()
+    {
+        $data['counter_info'] = $this->Admin_model->counter_info();
+        if($this->session->userdata('admin_id')){
+            $this->load->view('admin/header');
+            $this->load->view('admin/sidebar');
+            $this->load->view('admin/counter/counter',$data);
+            $this->load->view('admin/footer');
+        }
+        else{
+            redirect('Admin');
+        }
+    }
+   
    
     
 }
