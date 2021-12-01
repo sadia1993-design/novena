@@ -36,7 +36,7 @@ class Admin extends CI_Controller {
             $session_info['admin_id'] = $login_data->id;
             $session_info['username'] = $login_data->username;
             $this->session->set_userdata($session_info);
-            redirect('Admin/dashboard');
+            redirect('dashboard');
         }
         else{
             $session_info['msg'] = "Invalid username or password";

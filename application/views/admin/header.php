@@ -27,7 +27,7 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="<?php echo base_url('Admin/dashboard') ?>">
+          <a class="navbar-brand brand-logo" href="<?php echo base_url('dashboard') ?>">
             <img src="<?php echo base_url() ?>admin_assets/images/AdminLTELogo.png" alt="logo" />
             <span class="text-white">Admin</span>
           </a>
