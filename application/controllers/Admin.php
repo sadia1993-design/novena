@@ -73,4 +73,20 @@ class Admin extends CI_Controller {
         $this->session->set_userdata($session_info);
         redirect('Admin');
     }
+
+
+    //banner show function
+    public function banner()
+    {
+        $data['banner_info'] = $this->Admin_model->banner_info();
+        if($this->session->userdata('admin_id')){
+            $this->load->view('admin/header');
+            $this->load->view('admin/sidebar');
+            $this->load->view('admin/banner/banner_show', $data);
+            $this->load->view('admin/footer');
+        }
+        else{
+            redirect('Admin');
+        }
+    }
 }

@@ -1,16 +1,23 @@
-<!-- Slider Start -->
-<section class="banner">
+<!-- banner Start -->
+<?php
+
+foreach ($banner_info as $key => $value) {
+	$banner_obj = $value;
+}
+
+?>
+<section class="banner" style="background-image: url('<?php echo base_url()?>');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-xl-7">
 				<div class="block">
 					<div class="divider mb-3"></div>
-					<span class="text-uppercase text-sm letter-spacing ">Total Health care solution</span>
-					<h1 class="mb-3 mt-3">Your most trusted health partner</h1>
-					
-					<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+					<span class="text-uppercase text-sm letter-spacing "><?php echo $banner_obj->banner_sub_title; ?></span>
+					<h1 class="mb-3 mt-3"><?php echo $banner_obj->banner_heading; ?></h1>
+
+					<p class="mb-4 pr-5"><?php echo $banner_obj->banner_para; ?></p>
 					<div class="btn-container ">
-						<a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Make appoinment <i class="icofont-simple-right ml-2  "></i></a>
+						<a href="<?php echo $banner_obj->btn_link; ?>" target="_blank" class="btn btn-main-2 btn-icon btn-round-full"><?php echo $banner_obj->banner_btn; ?> <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -31,7 +38,7 @@
 						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
 						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
 					</div>
-				
+
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>
@@ -39,12 +46,12 @@
 						<span>Timing schedule</span>
 						<h4 class="mb-3">Working Hours</h4>
 						<ul class="w-hours list-unstyled">
-		                    <li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
-		                    <li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
-		                    <li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
-		                </ul>
+							<li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+						</ul>
 					</div>
-				
+
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-support"></i>
@@ -103,7 +110,7 @@
 						<p>Surgery Comepleted</p>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-badge"></i>
@@ -159,7 +166,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
@@ -197,7 +204,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
@@ -227,67 +234,67 @@
 				<div class="appoinment-wrap mt-5 mt-lg-0">
 					<h2 class="mb-2 title-color">Book appoinment</h2>
 					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-					     <form id="#" class="appoinment-form" method="post" action="#">
-                    <div class="row">
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>Choose Department</option>
-                                  <option>Software Design</option>
-                                  <option>Development cycle</option>
-                                  <option>Software Development</option>
-                                  <option>Maintenance</option>
-                                  <option>Process Query</option>
-                                  <option>Cost and Duration</option>
-                                  <option>Modal Delivery</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                  <option>Select Doctors</option>
-                                  <option>Software Design</option>
-                                  <option>Development cycle</option>
-                                  <option>Software Development</option>
-                                  <option>Maintenance</option>
-                                  <option>Process Query</option>
-                                  <option>Cost and Duration</option>
-                                  <option>Modal Delivery</option>
-                                </select>
-                            </div>
-                        </div>
+					<form id="#" class="appoinment-form" method="post" action="#">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Choose Department</option>
+										<option>Software Design</option>
+										<option>Development cycle</option>
+										<option>Software Development</option>
+										<option>Maintenance</option>
+										<option>Process Query</option>
+										<option>Cost and Duration</option>
+										<option>Modal Delivery</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect2">
+										<option>Select Doctors</option>
+										<option>Software Design</option>
+										<option>Development cycle</option>
+										<option>Software Development</option>
+										<option>Maintenance</option>
+										<option>Process Query</option>
+										<option>Cost and Duration</option>
+										<option>Modal Delivery</option>
+									</select>
+								</div>
+							</div>
 
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                            </div>
-                        </div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+								</div>
+							</div>
 
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="time" id="time" type="text" class="form-control" placeholder="Time">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                        </div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input name="time" id="time" type="text" class="form-control" placeholder="Time">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+								</div>
+							</div>
 
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
-                    </div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+								</div>
+							</div>
+						</div>
+						<div class="form-group-2 mb-4">
+							<textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+						</div>
 
-                    <a class="btn btn-main btn-round-full" href="appoinment.html" >Make Appoinment <i class="icofont-simple-right ml-2  "></i></a>
-                </form>
-            </div>
+						<a class="btn btn-main btn-round-full" href="appoinment.html">Make Appoinment <i class="icofont-simple-right ml-2  "></i></a>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -336,7 +343,7 @@
 							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
 						</p>
 					</div>
-					
+
 					<i class="icofont-quote-right"></i>
 				</div>
 
@@ -352,7 +359,7 @@
 							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
 						</p>
 					</div>
-					
+
 					<i class="icofont-quote-right"></i>
 				</div>
 

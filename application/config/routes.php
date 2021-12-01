@@ -62,6 +62,9 @@ $route['doctors'] = 'Pages/doctors';
 $route['doctorSingle'] = 'Pages/doctorSingle';
 $route['appointment'] = 'Pages/appointment';
 
+
+
 $route['dashboard'] = 'Admin/dashboard';
+$route['banner'] = 'Admin/banner';
 $route['404_override'] = 'Pages/error';
 $route['translate_uri_dashes'] = FALSE;

@@ -20,7 +20,7 @@
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href=""> General </a></li>
-              <li class="nav-item"> <a class="nav-link" href=""> Banner </a></li>
+              <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('banner')?>"> Banner </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Counter </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Service </a></li>
               <li class="nav-item"> <a class="nav-link" href=""> Appointment </a></li>

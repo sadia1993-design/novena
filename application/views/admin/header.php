@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>admin_assets/css/dataTables.css">
   <link rel="stylesheet" href="<?php echo base_url() ?>admin_assets/css/dashboard.css">
   <link rel="shortcut icon" href="<?php echo base_url() ?>admin_assets/images/favicon.png" />
+
 </head>
 
 <body>
@@ -38,15 +39,15 @@
       <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Welcome, 
+            <h1 class="welcome-text">Welcome,
               <span class="text-white fw-bold">
-                   <?php 
-                      $user_name = $this->session->userdata('username');
-                      if(isset($user_name)){
-                        echo $user_name;
-                      }                 
-                   ?>            
-              </span>          
+                <?php
+                $user_name = $this->session->userdata('username');
+                if (isset($user_name)) {
+                  echo $user_name;
+                }
+                ?>
+              </span>
             </h1>
           </li>
         </ul>

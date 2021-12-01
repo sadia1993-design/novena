@@ -19,5 +19,13 @@ class Admin_model extends CI_Model
         return $result;
     }
 
+    public function banner_info()
+    {
+        $this->db->select('*')->from('banner');
+        $query_result = $this->db->get();
+        $result = $query_result->result();
+        return $result;
+    }
+
  
 }
